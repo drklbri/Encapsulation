@@ -1,18 +1,8 @@
 package ru.vsu.cs.shevchenko_daniil;
 
 public class Tests {
-    /*
 
-    Спросить про предотвращение
-
-    Triangle testTriangle3 = TriangleMethods.CoordIntoTriangle(авпрапрап);
-    //Ввод букв вместо координат
-    Triangle testTriangle4 = TriangleMethods.CoordIntoTriangle(-2.15, 325.13, 432.4, 143.1, -153.1);
-    //Недостаточно координат
-
-    */
-
-    public static void AreaTest(Triangle triangle, double answer){
+    public static void AreaTest(Triangle triangle, double answer) throws Exception {
         if (TriangleMethods.Area(triangle) == answer){
             System.out.println("Area test was successful");
         } else {
@@ -28,7 +18,7 @@ public class Tests {
         }
     }
 
-    public static void PointInTriangleTest(Triangle triangle, Point point, boolean answer){
+    public static void PointInTriangleTest(Triangle triangle, Point point, boolean answer) throws Exception {
         if (TriangleMethods.IsPointInTriangle(triangle, point) == answer){
             System.out.println("Point in triangle test was successful");
         } else {
@@ -36,7 +26,7 @@ public class Tests {
         }
     }
 
-    public static void test(){
+    public static void test() throws Exception {
         System.out.println("Тест для обычного треугольника");
         Triangle testTriangle = TriangleMethods.CoordIntoTriangle(0, 0, 0, 3, 4, 0);
         //Пифагоров треугольник
